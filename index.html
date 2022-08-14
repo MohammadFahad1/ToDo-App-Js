@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Todo Notes</title>
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-size: 2em;
+            text-decoration: underline;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        textarea {
+            height: 40px;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            margin-right: 5px;
+            font-size: 2em;
+        }
+
+        button {
+            background-color: tomato;
+            border: 1px solid orange;
+            color: aliceblue;
+            padding: 0px 30px;
+            font-size: 2em;
+            transition: .1s ease-in-out;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: aliceblue;
+            border: 2px solid tomato;
+            color: tomato;
+        }
+
+        ol li {
+            font-size: 2em;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Write about your goal in life!</h1>
+        <form action="">
+            <textarea name="todo" id="todo" cols="30" rows="10" placeholder="What you want to do"></textarea>
+            <button type="button" id="add-todo">Add</button>
+        </form>
+
+        <ol>
+
+        </ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
